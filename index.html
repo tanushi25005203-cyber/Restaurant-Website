@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Haven Restaurant</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fffaf0;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ffab91;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://media.easemytrip.com/media/Blog/India/636977607425696252/636977607425696252QYiiUU.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    /* Menu Section */
+    .menu {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      color: #ff7043;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+    }
+
+    .item h3 {
+      color: #ff7043;
+      margin: 10px 0 5px 0;
+    }
+
+    .item p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #ffe0b2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #d84315;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #ff7043;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d84315;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Taste Haven Restaurant</h1>
+    <p>Delicious meals, cozy vibes & happy hearts!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Welcome to Taste Haven!</h2>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <h2>Our Special Dishes</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Pizza">
+        <h3>Cheese Burst Pizza</h3>
+        <p>Loaded with mozzarella and fresh toppings.</p>
+      </div>
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6wNgAFWt0tyweBvs9FEFf7no367IKZbdCQ&s" alt="Burger">
+        <h3>Classic Beef Burger</h3>
+        <p>Juicy, flavorful, and served with crispy fries.</p>
+      </div>
+      <div class="item">
+        <img src="https://tiffinandteaofficial.com/wp-content/uploads/2021/01/IMG_3812-1-scaled-e1670948948885.jpg" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Creamy Alfredo sauce with herbs and cheese.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Taste Haven is a family-friendly restaurant serving freshly made dishes
+      with love and care. Our chefs use the best ingredients to bring you the
+      taste of happiness in every bite. Visit us to enjoy great food and a cozy
+      ambiance.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taste Haven Restaurant | Designed by B.Tech 1st Year Student</p>
+  </footer>
+
+</body>
+</html>
